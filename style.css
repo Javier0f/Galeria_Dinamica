@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+.oscuro{
+    background: #222;
+}
+#btnArchivo.oscuro2{
+    background: #333;
+    border: 2px dashed #555;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+.swicht-content{
+    border-radius: 40px;
+    position: absolute;
+    width:65px;
+    height: 30px;
+    outline:2px solid #d0d0d0;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    transition: background .2s;
+}
+.swicht{
+    border-radius: 50%;
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    background: #333;
+    position: relative;
+    transition: all .2s;
+}
+.swicht.active{
+    background: #f0f0f0;
+    margin-left: 37px;
+    transition: all .2s;
+}
+.swicht-content.active{
+    background: #333;
+}
+
+#btnArchivo{
+    border: 2px dashed #333;
+    margin: 10px 0 0 -2px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    padding: 20px;
+    background: #F0F0F0;
+}
+#galeria{
+    border-radius: 20px;
+    padding: 20px;
+    width: max-content;
+    height: max-content;
+    margin: 20px auto;
+    background: linear-gradient(to bottom,#ddd,#9ab);
+    
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(4,175px);
+    grid-auto-flow: dense;
+    grid-gap: 5px;
+}
+#galeria.oscuro3{
+    background: linear-gradient(to bottom,#333,#234);
+}
+
+.noimagen{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid #822a;
+    background: #7227;
+    color: #aaa;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.foto{
+    object-fit:fill;
+    transition: transform .2s ;
+}
+.foto:hover{
+    transform: scale(1.1,1.1);
+}
+
+.estirar{
+    grid-row: auto/ span 3;
+}
+
+.ajustarAncho{
+    height: 170px;
+}
